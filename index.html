@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="UTF-8">
+		<title>Crystal Game</title>
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	</head>
+	<body>
+		
+		<div class="container">
+			
+			<!-- Crystal Game Jumbotron -->
+			<div class="jumbotron" style="background-color: black; color: grey;">
+				<div class="container">
+					<h1 class="text-center"><strong>Crystal Game</strong></h1>
+				</div>
+			</div>
+
+
+			<!-- Rules -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading" style="background-color: black; color: grey;">
+							<h3 class="panel-title text-center">Rules</h3>
+						</div>
+						<div class="panel-body">
+							<p><small>To win: click on the right crystals to match your score with the random number. Each crystal has a different value. You lose: if your score exceeds the random number.</small></p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="row">
+				<!-- Winning Score -->
+				<div class="col-lg-3">
+					
+					<div class="panel panel-primary">
+						<div class="panel-heading" style="background-color: black; color: grey;">
+							<h3 class="panel-title text-center">Winning Score</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="text-center" id="winning-score"></h3>
+						</div>
+					</div>
+				</div>
+
+				<!-- Player Score -->
+				<div class="col-lg-3">
+					
+					<div class="panel panel-primary" >
+						<div class="panel-heading" style="background-color: black; color: grey;">
+							<h3 class="panel-title text-center">Player Score</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="text-center" id="player-score"></h3>
+						</div>
+					</div>
+				</div>
+
+				<!-- Crystals -->
+				<div class="col-lg-6">
+
+					<div class="panel panel-primary" >
+						<div class="panel-heading" style="background-color: black; color: grey;">
+							<h3 class="panel-title text-center">Crystals</h3>
+						</div>
+						<div class="panel-body text-center">
+							<img src="assets/images/blue.png" alt="" id="blue">
+							<img src="assets/images/white.png" alt="" id="white">
+							<img src="assets/images/purple.png" alt="" id="purple">
+							<img src="assets/images/yellow.png" alt="" id="yellow">
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+			<!-- Counters Row -->
+			<div class="row">
+				
+				<!-- Win Counter -->
+				<div class="col-lg-6">				
+					<div class="panel panel-primary">
+						<div class="panel-heading" style="background-color: black; color: grey;">
+							<h3 class="panel-title text-center">Win Counter</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="text-center" id="win-count">0</h3>
+						</div>
+					</div>
+				</div>
+
+				<!-- Loss Counter -->
+				<div class="col-lg-6">
+					
+					<div class="panel panel-primary" >
+						<div class="panel-heading" style="background-color: black; color: grey;">
+							<h3 class="panel-title text-center">Loss Counter</h3>
+						</div>
+						<div class="panel-body">
+							<h3 class="text-center" id="loss-count">0</h3>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- JQuery -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- Main Game Logic  -->
+		<script src="assets/js/game.js"></script>
+	</body>
+</html>
